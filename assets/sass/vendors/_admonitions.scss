@@ -49,8 +49,8 @@ $dark-blockquote-border: #45475a;
   align-items: center;
   font-weight: 600;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 1.1rem;
-  border-radius: 4px 4px 0 0;
+  font-size: 1.6rem;
+  border-radius: 0 25px 0 0;
   
   svg {
     width: 1.1em;
@@ -61,9 +61,9 @@ $dark-blockquote-border: #45475a;
 }
 
 .admonition-content {
-  padding: 1rem;
+  padding: 2rem;
   background-color: $light-bg;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 25px 0;
   color: $light-text;
   transition: background-color 0.3s ease, color 0.3s ease;
 
