@@ -39,7 +39,7 @@ $dark-blockquote-border: #45475a;
 .admonition {
   margin: 1.5em 0;
   border-radius: 4px 25px 25px 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
 
@@ -62,9 +62,9 @@ $dark-blockquote-border: #45475a;
 
 .admonition-content {
   padding: 2rem;
-  // background-color: $light-bg;
+  background-color: $light-bg;
   border-radius: 0 0 25px 0;
-  // color: $light-text;
+  color: $light-text;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   p {
@@ -95,7 +95,22 @@ $dark-blockquote-border: #45475a;
 }
 
 // Dark mode styles
-@media (prefers-color-scheme: dark) {
+[data-scheme="dark"]  .admonition-content {
+    background-color: $dark-bg;
+    color: $dark-text;
+
+    code {
+      // background-color: $dark-code-bg;
+      // color: $dark-code-text;
+    }
+
+    blockquote {
+      border-left-color: $dark-blockquote-border;
+      color: $dark-code-text;
+    }
+  }
+
+[data-scheme="dark"] body.dark {
   .admonition-content {
     background-color: $dark-bg;
     // color: $dark-text;
@@ -106,25 +121,8 @@ $dark-blockquote-border: #45475a;
     }
 
     blockquote {
-      // border-left-color: $dark-blockquote-border;
-      // color: $dark-code-text;
-    }
-  }
-}
-
-body.dark {
-  .admonition-content {
-    // background-color: $dark-bg;
-    // color: $dark-text;
-
-    code {
-      // background-color: $dark-code-bg;
-      // color: $dark-code-text;
-    }
-
-    blockquote {
-      // border-left-color: $dark-blockquote-border;
-      // color: $dark-code-text;
+      border-left-color: $dark-blockquote-border;
+      color: $dark-code-text;
     }
   }
 }
