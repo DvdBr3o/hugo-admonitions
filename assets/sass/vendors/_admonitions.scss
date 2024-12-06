@@ -62,9 +62,9 @@ $dark-blockquote-border: #45475a;
 
 .admonition-content {
   padding: 2rem;
-  background-color: $light-bg;
+  // background-color: $light-bg;
   border-radius: 0 0 25px 0;
-  color: $light-text;
+  // color: $light-text;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   p {
@@ -114,8 +114,8 @@ $dark-blockquote-border: #45475a;
 
 body.dark {
   .admonition-content {
-    background-color: $dark-bg;
-    color: $dark-text;
+    // background-color: $dark-bg;
+    // color: $dark-text;
 
     code {
       background-color: $dark-code-bg;
